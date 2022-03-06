@@ -14,36 +14,41 @@
     <link rel="manifest" href="site.webmanifest">
     <title>My first webpage, with JavaScript</title>
   </head>
-  <body>      
-    <script>
-      function myButtonClicked() {
-        alert("Hello, Wordl!")
-      }
-    </script>
+  <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class = "mdl-layout__header">
         <div class = "mdl-layout__header-row">      
-          <span class = "mdl-layout-title">Hello, World! with JS</span>          
-        </div>
+          <span class = "mdl-layout-title">My first webpage, with JavaScript</span>          
+        </div>       
       </header>
       <main class = "mdl-layout__content">
-        <div class = "page-content" style = "padding-left:5px;">Enter your age.</div>
+        <div class = "page-content" style = "padding-left:1px;">Enter the length of a square.</div>
         <!-- Simple Textfield for integers-->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
             <input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="demo-input" />
             <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input">how old are you?</label>
+            <label class="mdl-textfield__label" for="demo-input">Length of square (mm)</label>
             <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number</span>
           </div>
+        </form>
+        <!-- Raised button with ripple -->
+    <script>
+      function myButtonClicked() {
+        alert("Hello, Wordl!")
+      }
+    </script>
     <br>
-    <button onclick="myButtonClicked()">Click me</button>
+        <button onclick="myButtonClicked()">
+      Calculate area
+    </button>
     <br>
     <p>
       <a href="./index2.html">My index2.html page</a>
     </p>
   </body>
 </html>
+        
