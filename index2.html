@@ -12,13 +12,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.yellow-orange.min.css" /> 
     <title>My first webpage, with JavaScript</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script>
       function myButtonClicked() {
+        alert("Hello, Wordl!")
+      }
+    </script>
+    <script>
+      function myButtonClicked2() {
         alert("Hello, Wordl!")
       }
     </script>
@@ -38,11 +43,12 @@
         </form>
         <!-- Colored raised button -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="myButtonClicked()">
-         Click here
+         Enter radius here
         </button>
-        <p>
-          <a href="./index2.html">My index2.html page</a>
-        </p>
+        <!-- Accent-colored raised button with ripple -->
+       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent onclick="myButtonClicked2()">
+         Retry here
+       </button>
       </main>
     </div>
   </body>
